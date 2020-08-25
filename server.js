@@ -92,7 +92,7 @@ app.post('/createcoupon', async function (req, res) {
   res.send(coupons)
 
 });
-app.listen(process.env.PORT, function () {
-  console.log(process.env.PORT);
-})
+app.listen(process.env.PORT || 7070, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 console.log('Welcome to cloudTek')
