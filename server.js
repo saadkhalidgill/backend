@@ -92,7 +92,7 @@ app.post('/createcoupon', async function (req, res) {
   res.send(coupons)
 
 });
-app.listen(global.gConfig.node_port, function () {
-  console.log(global.gConfig);
+app.listen(process.env.PORT, function () {
+  console.log(process.env.PORT);
 })
 console.log('Welcome to cloudTek')
