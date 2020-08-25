@@ -33,7 +33,7 @@ app.all("/*", function (req, res, next) {
 });
 app.post('/signup', async function (req, res) {
 
-  const data = await firebase.auth().createUserWithEmailAndPassword(req.body.userName, req.body.password).catch(function (error) {
+  const data = await firebase.auth().createUserWithEmailAndPassword(req.body.username, req.body.password).catch(function (error) {
     console.log(error);
     res.status(400).send({
       message: 'Something Went Wrong tryagain!'
@@ -44,7 +44,7 @@ app.post('/signup', async function (req, res) {
 });
 app.post('/signin', async function (req, res) {
 
-  const data = await firebase.auth().signInWithEmailAndPassword(req.body.username, req.body.password).catch(function (error) {
+  const data = await firebase.auth().signInWithEmailAndPassword(req.body.userName, req.body.password).catch(function (error) {
     console.log(error);
     res.status(400).send({
       message: 'Incorrect User Name Or Password'
