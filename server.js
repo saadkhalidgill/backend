@@ -99,6 +99,6 @@ app
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
+  .get('/', (req, res) => res.render('server.js'))
   .listen(process.env.PORT, () => console.log(`Listening on ${ PORT }`))
 console.log('Welcome to cloudTek')
