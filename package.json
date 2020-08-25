@@ -1,0 +1,28 @@
+{
+  "name": "node-smarter-config",
+  "version": "1.0.0",
+  "description": "Node.js Best Practices - Smarter Ways to Manage Config Files and Variables",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Saad Khalid",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "base64-to-image": "^1.0.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "firebase": "^7.19.0",
+    "jira-connector": "^3.1.0",
+    "lodash": "^4.17.5",
+    "stream": "0.0.2",
+    "unirest": "^0.6.0",
+    "util": "^0.12.2",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2"
+  }
+}
