@@ -92,13 +92,6 @@ app.post('/createcoupon', async function (req, res) {
   res.send(coupons)
 
 });
-// app.listen(process.env.PORT || 7070, function(){
-//   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-// });
-app
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('server.js'))
-  .listen(process.env.PORT, () => console.log(`Listening on ${ PORT }`))
-console.log('Welcome to cloudTek')
+app.listen(process.env.PORT || 7070, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
