@@ -23,14 +23,7 @@ app.use(bodyParser.json({
   limit: '50mb'
 }));
 firebase.initializeApp(sKey.firebase);
-app.all("/*", function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
-  console.log('Hello From Server')
-  res.send('Hello From Server')
-  next();
-});
+
 app.post('/signup', async function (req, res) {
 
   const data = await firebase.auth().createUserWithEmailAndPassword(req.body.username, req.body.password).catch(function (error) {
