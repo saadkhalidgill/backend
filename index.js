@@ -106,6 +106,6 @@ app.post('/signup', async (req, res) => {
   
   });
 
-app.listen(global.gConfig.node_port, function () {
+app.listen(process.env.PORT || 7070, function () {
   console.log(global.gConfig.node_port);
 })
