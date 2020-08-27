@@ -9,4 +9,6 @@
     appId: "1:750194432642:web:5ec569adb50189da1c729b",
     measurementId: "G-DMTYQ88MHD"
   };
+  
+  
 const  stripeKey = 'sk_test_51HJlYuJiqo2OhSfST7nhsyusFaDYjR2GDNRynMLWhxWFWwwHIFib7HQ3n2V1C5Q35vdciShfZskDNJIhYAPzSSEb00o7zi0RNx'

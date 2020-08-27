@@ -2,10 +2,10 @@
   "name": "node-smarter-config",
   "version": "1.0.0",
   "description": "Node.js Best Practices - Smarter Ways to Manage Config Files and Variables",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "author": "Saad Khalid",
   "license": "ISC",
